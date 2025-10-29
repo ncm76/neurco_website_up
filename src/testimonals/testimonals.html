@@ -1,0 +1,53 @@
+
+  <section class="testimonials">
+    <h3 class="section-title">TESTIMONIALS</h3>
+    <p class="section-subtitle">
+      We embrace a world that empowers through guidance and support for well-being.
+      Through our journey from research to reality, we share knowledge and experiences by providing product careers and teaching,
+      advancing individuals to serve society better.
+    </p> 
+         
+    <!-- <section class="testimonials">
+      @for (item of testimonials; track item) {
+        <mat-card class="testimonial-card" >
+          <div class="card-header">
+            <img mat-card-avatar [src]=item.imagepath [alt]=item.name />
+            <div>
+              <h3 class="name">{{ item.name }}</h3>
+              <p class="role">{{ item.role }}</p>
+            </div>
+          </div>
+      
+          <mat-card-content>
+            <p class="quote">"{{ item.text }}"</p>
+          </mat-card-content>
+        </mat-card>
+
+      }
+      
+    
+   </section> -->
+    
+<!-- grid testing -->
+   <section class="gridclass">
+    <mat-grid-list cols="3" rowHeight="600px" gutterSize="20px" >
+      @for (item of testimonials; track item) {
+        <mat-grid-tile class="tileclass" colspan="1" rowspan="1">
+
+            <mat-card class="testimonial-card" >
+              <div class="card-header">
+                <img mat-card-avatar [src]=item.imagepath [alt]=item.name />
+                <div>
+                  <h3 class="name">{{ item.name }}</h3>
+                  <p class="role">{{ item.role }}</p>
+                </div>
+              </div>
+          
+              <mat-card-content>
+                <p class="quote">"{{ item.text }}"</p>
+              </mat-card-content>
+            </mat-card>
+      </mat-grid-tile>
+    }
+    </mat-grid-list>
+   </section>

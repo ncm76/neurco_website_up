@@ -1,0 +1,87 @@
+.testimonials {
+    display: grid;
+    text-align: center;
+    padding: 3rem 2rem;
+    font-family: roboto;
+  
+    .section-title {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #d2691e; 
+      margin-bottom: 0.5rem;
+      text-align: left;
+      
+    }
+  
+    .section-subtitle {
+      color: #d2691e;
+      margin-bottom: 2rem;
+      font-size: 1rem;
+      text-align: left;
+    }
+  
+    .testimonials {
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin: 2rem 0;
+    }
+    
+    .testimonial-card {
+      flex: 1 1 30%;
+      padding: 1rem;
+      border-radius: 12px;
+      background-color: #fafafa;
+      height: 100%;
+      overflow: hidden;
+    }
+    
+    .card-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+    
+      img {
+        width: 120px;
+        height: 120px;
+        border-radius: 20%;
+        margin-right: 1rem;
+        object-fit: cover;
+      }
+    
+      .name {
+        font-weight: bold;
+        margin: 0;
+        text-align: right;
+        color: #d2691e;
+      }
+    
+      .role {
+        font-size: 0.9rem;
+        color: #666;
+        text-align: right;
+      }
+    }
+    
+    .quote {
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: #d2691e;
+      text-align: justify;
+      font-family: roboto;
+ 
+    }
+    
+  }    
+  .gridclass{
+    
+    border-color: white;
+
+  }
+
+  .tileclass{
+    background-color: white;
+  }
+  
+  

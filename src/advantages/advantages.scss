@@ -1,0 +1,69 @@
+.advantage {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: #f8f9fc; 
+    font-family: roboto;
+    font-size: larger;
+  
+    .title {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #f7941d; 
+      margin-bottom: 0.3rem;
+      font-family: roboto;
+      text-align: left;
+    }
+  
+    .subtitle {
+      font-size: 1rem;
+      color: #d28f2f; 
+      margin-bottom: 2.5rem;
+      text-align: left;
+      font-family: Arial;
+    }
+  
+    .advantages-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 0.5px;
+      justify-items: center;
+  
+      .card {
+        width: 200px;
+        height: 400px;
+        padding: 1.5rem 1rem;
+        border: 1px solid black; 
+        border-radius: 4px;
+        background: #fff;
+        text-align: center;
+        transition: transform 0.2s ease;
+        align-items: center;
+        
+  
+        &:hover {
+          transform: translateY(-6px);
+        }
+  
+        img,
+        .material-icons {
+          font-size: 150px;              
+          width: 200px;
+          height: 200px;
+          margin-bottom: 1rem;
+          color: #9c27b0; 
+          align-items: center;
+          line-height: 150px;
+
+        }
+  
+        h3 {
+          font-size: 35px;
+          font-weight: 700;
+          color: #9c27b0;
+          line-height: 1.3;
+
+        }
+      }
+    }
+  }
+  

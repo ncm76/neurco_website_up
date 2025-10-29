@@ -1,0 +1,18 @@
+<section class="gridclass">
+    <mat-grid-list cols="3" rowHeight="500px" gutterSize="20px">
+      @for (item of products; track item) {
+        <mat-grid-tile class="product-tile" colspan="1" rowspan="1">
+          <mat-card class="product-card">
+            <div class="product-header">
+              <img mat-card-avatar [src]="item.image" />
+            </div>
+  
+            <mat-card-content>
+              <p class="product-description">{{ item.caption }}</p>
+            </mat-card-content>
+          </mat-card>
+        </mat-grid-tile>
+      }
+    </mat-grid-list>
+  </section>
+  

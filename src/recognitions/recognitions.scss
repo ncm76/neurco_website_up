@@ -1,0 +1,41 @@
+.Recognitions {
+    display: grid;
+    text-align: center;
+    padding: 3rem 2rem;
+    font-family: roboto;
+  
+    .section-title {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #d2691e; 
+      margin-bottom: 0.5rem;
+      text-align: left;
+      
+    }
+  
+    .section-subtitle {
+      color: #d2691e;
+      margin-bottom: 2rem;
+      font-size: 1rem;
+      text-align: left;
+    }
+
+    .certification-logos {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2.5rem 3rem;
+        align-items: center;
+        justify-items: center;
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+    
+      .certification-logos img {
+        max-width: 700px;   
+        max-height: 200px;  
+        object-fit: contain;
+        transition: transform 0.3s ease, filter 0.3s ease;
+      }
+    
+
+}

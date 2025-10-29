@@ -1,0 +1,30 @@
+<section class="team-section">
+  <h3 class="section-title">TEAM</h3>
+  <p class="section-subtitle">
+    Our team comprises world-class experts in psychiatry, AI technologies, and commercialisation.
+  </p> 
+
+  <section class="gridclass">
+    <mat-grid-list cols="3" rowHeight="500px" gutterSize="20px">
+      @for (member of team; track member) {
+        <mat-grid-tile class="team-tile" colspan="1" rowspan="1">
+          <mat-card class="team-card">
+            <div class="team-header">
+              <img mat-card-avatar [src]="member.image" [alt]="member.name" />
+              <div>
+                <h3 class="member-name">{{ member.name }}</h3>
+                <h4 class="member-role">{{ member.role}}</h4>
+              </div>
+            </div>
+
+            <mat-card-content>
+              <p class="member-description">{{ member.description }}</p>
+            </mat-card-content>
+          </mat-card>
+        </mat-grid-tile>
+      }
+    </mat-grid-list>
+  </section>
+</section>
+
+  

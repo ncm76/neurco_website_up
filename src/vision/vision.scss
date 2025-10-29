@@ -1,0 +1,25 @@
+.theory-section {
+    max-width: 750px;
+    margin: 80px auto; 
+    padding: 0 20px; 
+    //background-color: #f4f5f7; // light gray background
+    color: #222; // dark gray text
+    font-family: sans-serif;
+    line-height: 1.8;
+    text-align: left;
+  
+    .title {
+        font-size: 30px;
+        color: #d8903b;
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin-bottom: 40px;
+        text-transform: uppercase;
+      }
+    
+      p {
+        font-size: 22px;
+        margin-bottom: 28px;
+      }
+  }
+  
